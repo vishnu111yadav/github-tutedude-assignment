@@ -22,7 +22,12 @@ def submit():
      form_data = dict(request.json)
      collection.insert_one(form_data)
      return "Insert Succes"
-
+@app.route('/submittodoitem', methods=['POST'])
+def submit():
+     # name = request.form.get('name')
+     form_data = dict(request.json)
+     collection.insert_one(form_data)
+     return "Insert Succes"
 @app.route('/view')
 def view():
      data = collection.find()
