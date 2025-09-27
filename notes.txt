@@ -1,0 +1,1 @@
+jinja:- is a templating engine used by flask to trnafer i.e. {{day}}
